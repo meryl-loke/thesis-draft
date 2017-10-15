@@ -51,7 +51,7 @@ while(!feof($linkedFile)) {
                     'http://purl.org/linguistics/gold/hypernym'
 
                 );
-                file_put_contents("output.csv", $splitData[0].$string."\n", FILE_APPEND);
+                //file_put_contents("output.csv", $splitData[0].$string."\n", FILE_APPEND);
                 $maxDistance = 3;
                 // get all queries we are interested in
                 $queries = $rf->getQueries($first, $second, $maxDistance, 10, array(), $ignoredProperties, true);
